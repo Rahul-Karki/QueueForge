@@ -16,7 +16,7 @@ jobs:
         with:
           version: 11.25.0
           runtime: node@22.20.0
-          cache: pnpm
+          cache: true
           install: false
       - run: pnpm install --frozen-lockfile
       - run: pnpm lint
